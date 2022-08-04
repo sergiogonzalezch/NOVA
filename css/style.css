@@ -13,7 +13,7 @@ a:hover {
 /*BODY STYLE*/
 body {
 	background-color: #fcfcfc;
-	box-sizing: border-box;
+	/*	box-sizing: border-box;*/
 	font-family: 'Nunito Sans', sans-serif;
 	font-size: 1.2rem;
 	font-weight: lighter;
@@ -29,11 +29,6 @@ h5,
 h6 {
 	font-family: 'Jost', sans-serif;
 	font-weight: 500;
-}
-
-/*I TAG STYEL*/
-i {
-	margin: 0 5px;
 }
 
 /*SECTION TAG STYLE*/
@@ -57,13 +52,12 @@ section {
 	margin: 0 10px;
 }
 
-/*RESIZING H3 STYLE*/
-.big-subtitle {
-	font-size: 2rem;
+.title-section {
+	font-size: 2.5rem;
 }
 
 /*STYLES FOR CONTAINERS*/
-.father-container {
+.section-container {
 	display: flex;
 	flex-direction: row-reverse;
 	flex-wrap: nowrap;
@@ -88,7 +82,7 @@ section {
 	font-family: 'Nunito Sans', sans-serif;
 }
 
-.responsive {
+.responsive-image {
 	height: 100%;
 	object-fit: cover;
 	object-position: bottom;
@@ -191,17 +185,21 @@ h2 > span {
 	text-align: center;
 }
 
-/*RESIZE THE H2*/
-.about-us-title > h2 {
+/*
+RESIZE THE H2 */
+.about-us-title .title-section {
 	font-size: 4rem;
 }
+
 
 /********************END OF ABOUT US STYLES**********************/
 
 /*************************SERVICIES******************************/
 /*SERVICIES CONTAINER*/
+
 .container-servicies {
 	display: flex;
+	margin-top: 70px;
 }
 
 /*CARD MARGIN SIDES*/
@@ -216,14 +214,14 @@ h2 > span {
 	flex-direction: column;
 }
 
-.pic-service {
+.crop-circle {
 	position: relative;
 	width: 200px;
 }
 
 /*CARD PIC PROPERTIES*/
 
-.card-pic {
+.image-card {
 	border-radius: 100%;
 	display: block;
 	height: 200px;
@@ -248,7 +246,7 @@ h2 > span {
 	width: 100%;
 }
 
-.pic-service:hover .overlay {
+.crop-circle:hover .overlay {
 	opacity: 1;
 }
 
@@ -375,6 +373,10 @@ textarea {
 	text-align: center;
 }
 
+i {
+	margin: 0 5px;
+}
+
 /*SOCIAL DISPLAY*/
 .social {
 	display: flex;
@@ -390,7 +392,7 @@ textarea {
 /*DISPLAY LINK PHONE*/
 .phone-number {
 	display: flex;
-	margin: 10px;
+	margin: 10px 20px;
 }
 
 /*FOOTER BOTTOM*/
@@ -467,6 +469,14 @@ textarea {
 @media all and (max-width: 700px) {
 	.big-heading {
 		font-size: 5rem;
+	}
+
+	.title-section {
+		text-align: center;
+	}
+
+	.info-style {
+		text-align: center;
 	}
 
 	.info-jobs {
