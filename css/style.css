@@ -252,13 +252,6 @@ h2 > span {
 	opacity: 1;
 }
 
-/*
-.card-pic:hover {
-
-	box-shadow: 0 0 10px rgba(51, 53, 51, 0.75);
-}
-*/
-
 /*CARD BODY STYLES*/
 .card-body {
 	border-bottom: 5px solid;
@@ -270,11 +263,10 @@ h2 > span {
 /***********************END OF SERVICIES************************/
 
 /***********************PORTFOLIO STYLES************************/
-/*PORFOLIO CONTAINER PROPERTY*/
+/*PORTFOLIO CONTAINER PROPERTY*/
 .portfolio {
 	background-color: #333533;
 	color: #fcfcfc;
-	margin: 50px 0;
 }
 
 /*INFO SLIDER POSITION PROPERTY*/
@@ -400,7 +392,6 @@ textarea {
 	display: flex;
 	margin: 10px;
 }
-
 
 /*FOOTER BOTTOM*/
 .footer-bottom {
