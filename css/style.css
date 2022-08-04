@@ -73,6 +73,7 @@ section {
 }
 
 .info-style {
+	background-color: rgb(51, 53, 51);
 	background-color: rgba(51, 53, 51, 0.5);
 	bottom: 0;
 	box-sizing: border-box;
@@ -87,8 +88,10 @@ section {
 	font-family: 'Nunito Sans', sans-serif;
 }
 
-.pic-size {
+.responsive {
 	height: 100%;
+	object-fit: cover;
+	object-position: bottom;
 	width: 100%;
 }
 
@@ -208,20 +211,53 @@ h2 > span {
 
 /*ALING CARD HEADER*/
 .card-header {
-	text-align: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.pic-service {
+	position: relative;
+	width: 200px;
 }
 
 /*CARD PIC PROPERTIES*/
+
 .card-pic {
 	border-radius: 100%;
-	box-sizing: border-box;
+	display: block;
 	height: 200px;
-	transition: all 0.1s ease-in-out;
+	width: 200px;
 }
 
-.card-pic:hover {
-	border: 4px solid #333533;
+.overlay {
+	align-items: center;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 100%;
+	bottom: 0;
+	color: #fcfcfc;
+	display: flex;
+	font-size: 20px;
+	height: 100%;
+	justify-content: center;
+	opacity: 0;
+	position: absolute;
+	text-align: center;
+	transition: .7s ease;
+	width: 100%;
 }
+
+.pic-service:hover .overlay {
+	opacity: 1;
+}
+
+/*
+.card-pic:hover {
+
+	box-shadow: 0 0 10px rgba(51, 53, 51, 0.75);
+}
+*/
 
 /*CARD BODY STYLES*/
 .card-body {
@@ -274,6 +310,7 @@ h2 > span {
 
 /*FORM CONTAINER STYLE*/
 .form-container {
+	background-color: rgb(53, 51, 53);
 	background-color: rgba(53, 51, 53, 0.6);
 	border-radius: 5px;
 	color: #fcfcfc;
@@ -417,6 +454,10 @@ textarea {
 		left: 50px;
 	}
 
+	.service {
+		text-align: center;
+	}
+
 	.container-servicies {
 		flex-direction: column;
 	}
@@ -437,10 +478,6 @@ textarea {
 		font-size: 5rem;
 	}
 
-	.info-style {
-		background-color: #333533;
-	}
-
 	.info-jobs {
 		width: 100%;
 	}
@@ -452,10 +489,6 @@ textarea {
 	.footer-middle {
 		display: flex;
 		flex-direction: column;
-	}
-
-	.pic-size {
-		display: none;
 	}
 
 	.social {
