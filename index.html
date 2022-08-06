@@ -61,10 +61,9 @@
 			<!--Card container-->
 			<div class="container-servicies">
 				<!--Web desing card-->
-				<div id="web-desing" class="card">
+				<div id="web-desing-card" class="card">
 					<div class="card-header">
-						<div class="crop-circle">
-							<img src="media/img/design-html-web-design-template-concept.jpg" alt="Desing web template" class="image-card" title="Web desing">
+						<div class="web-desing crop-circle lightbox">
 							<div class="overlay"><i class="fa-solid fa-plus"></i></div>
 						</div>
 						<h3 class="card-title">Web desing</h3>
@@ -74,10 +73,9 @@
 					</div>
 				</div>
 				<!--Card web programming-->
-				<div id="web-programming" class="card">
+				<div id="web-programming-card" class="card">
 					<div class="card-header">
-						<div class="crop-circle">
-							<img src="media/img/codifing.png" alt="Programing workers" class="image-card" title="Coding">
+						<div class="web-programming crop-circle lightbox">
 							<div class="overlay"><i class="fa-solid fa-plus"></i></div>
 						</div>
 						<h3 class="card-title">Web development</h3>
@@ -87,10 +85,9 @@
 					</div>
 				</div>
 				<!--Card web analytics-->
-				<div id="analytics" class="card">
+				<div id="analytics-card" class="card">
 					<div class="card-header">
-						<div class="crop-circle">
-							<img src="media/img/charts.png" alt="Charts" class="image-card" title="analytics">
+						<div class="analytics crop-circle lightbox">
 							<div class="overlay"><i class="fa-solid fa-plus"></i></div>
 						</div>
 						<h3 class="card-title">Analytics</h3>
@@ -141,12 +138,12 @@
 					<label for="select">What it's your consult</label>
 					<select class="input input-style" id="select">
 						<option value="" disabled selected hidden>Select and option</option>
-						<option>Web Desing</option>
-						<option>Development</option>
-						<option>Support</option>
-						<option>Bussines</option>
-						<option>Job offert</option>
-						<option>Other</option>
+						<option value="Web desing">Web Desing</option>
+						<option value="Development">Development</option>
+						<option value="Suport">Support</option>
+						<option value="Bussines">Bussines</option>
+						<option value="Job offert">Job offert</option>
+						<option value="Other">Other</option>
 					</select>
 					<label for="comentario">Comentarios:</label>
 					<textarea class="text-area input-style" id="message" name="areatexto" rows="8" cols="80" placeholder="Menssage"></textarea>
@@ -173,6 +170,5 @@
 			<p>© Copyrigth Nova 2022</p>
 		</div>
 	</footer>
-</body>
-
-</html>
+	<script type="application/javascript" src="js/lightbox.js"></script>
+</body></html>
