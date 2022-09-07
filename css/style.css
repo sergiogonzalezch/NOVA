@@ -204,6 +204,7 @@ RESIZE THE H2 */
     display: flex;
     justify-content: center;
     list-style: none;
+    padding: 0;
 }
 
 .tab-link {
@@ -217,8 +218,9 @@ RESIZE THE H2 */
 }
 
 .active .tab-link {
-    color: crimson;
     border-bottom: 2px solid crimson;
+    color: crimson;
+
 }
 
 .contents > div {
@@ -388,8 +390,8 @@ select option {
 }
 
 .input-group {
-    position: relative;
     margin-bottom: 2rem;
+    position: relative;
 }
 
 /*TEXT AREA NO RESIZING*/
