@@ -5,7 +5,7 @@
     }
     var metSlider = {
         starSlide: function () {
-            setInterval(metSlider.slideMove, 5000);
+            setInterval(metSlider.slideMove, 2500);
         },
         slideMove: function () {
             propSlider.slider.style.transition = 'all 1s ease';

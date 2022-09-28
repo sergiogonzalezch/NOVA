@@ -14,7 +14,7 @@
             propParallax.way = window.pageYOffset;
             propParallax.limit = propParallax.section.offsetTop + propParallax.section.offsetHeight;
 
-            if (propParallax.way > propParallax.section.offsetTop - window.outerHeight && propParallax.way <= propParallax.limit) {
+            if (propParallax.way > propParallax.section.offsetTop && propParallax.way <= propParallax.limit) {
                 propParallax.section.style.backgroundPositionY = (propParallax.way - propParallax.section.offsetTop) / 1.5 + 'px';
             } else {
                 propParallax.section.style.backgroundPositionY = 0;
