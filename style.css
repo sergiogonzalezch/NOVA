@@ -68,15 +68,17 @@ section {
 
 /************************HEADER STYLE*********************/
 /*STYLE OF HEADER*/
-.header {
+.background-header {
     background-image: url(../media/img/development.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 560px;
     position: relative;
     width: 100%;
 }
 
 /*GRADIENT BRACKGROUND WITH FADE*/
-.background {
+.overlay {
     background: rgb(51, 53, 51);
     background: linear-gradient(180deg, rgba(51, 53, 51, 1) 0%, rgba(255, 255, 255, 0) 100%);
     height: 100%;
