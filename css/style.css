@@ -70,6 +70,8 @@ section {
 /*STYLE OF HEADER*/
 .header {
     background-image: url(../media/img/development.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 560px;
     position: relative;
     width: 100%;

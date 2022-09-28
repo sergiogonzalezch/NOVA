@@ -40,7 +40,7 @@
                 document.getElementsByClassName('image-modal')[0].style.opacity = 0;
                 setTimeout(function () {
                     document.getElementsByClassName('image-modal')[0].style.opacity = 1;
-                }, 500);
+                }, 100);
             }
 
             propLightbox.modal.innerHTML += '<i id="close_modal" class="fa-solid fa-x"></i>';
