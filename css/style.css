@@ -381,7 +381,7 @@ select {
     border-bottom: 2px solid rgba(215, 38, 56, 0.5);
     color: #fcfcfc;
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     outline: none;
     padding: 1rem 0;
     width: 100%;
@@ -394,6 +394,31 @@ select option {
 .input-group {
     margin-bottom: 2rem;
     position: relative;
+}
+
+label {
+    color: #fcfcfc;
+    font-family: sans-serif;
+}
+
+label.label {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    line-height: 1rem;
+    font-size: 1rem;
+    margin-left: 1rem;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+label.label.active {
+    top: -0.75rem;
+    margin-left: 0;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    color: #fcfcfc;
 }
 
 /*TEXT AREA NO RESIZING*/
