@@ -420,6 +420,12 @@ label.label.active {
     line-height: 0.75rem;
     color: #fcfcfc;
 }
+.error {
+    position: absolute;
+    color: #ff3b3b;
+/*    font-family: 'Poppins', serif;*/
+    font-size: 0.875rem
+}
 
 /*TEXT AREA NO RESIZING*/
 textarea {
