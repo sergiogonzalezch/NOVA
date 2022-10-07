@@ -414,28 +414,23 @@ label.label {
 }
 
 label.label.active {
-    top: -0.75rem;
+    top: .1rem;
     margin-left: 0;
     font-size: 0.75rem;
     line-height: 0.75rem;
     color: #fcfcfc;
 }
+
 .error {
     position: absolute;
     color: #ff3b3b;
-/*    font-family: 'Poppins', serif;*/
+    /*    font-family: 'Poppins', serif;*/
     font-size: 0.875rem
 }
 
 /*TEXT AREA NO RESIZING*/
 textarea {
     resize: none;
-}
-
-/*BUTTONS DISPLAY*/
-.buttons {
-    display: flex;
-    justify-content: space-between;
 }
 
 /*BTN STYLE*/
@@ -445,12 +440,13 @@ textarea {
     border-radius: 8px;
     box-shadow: 2px 2px 5px #333533;
     color: #fcfcfc;
+    cursor: pointer;
+    display: block;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 15px;
     font-weight: bold;
     height: 30px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin: 20px auto;
     transition: all 0.5s ease-in-out;
     width: 100px;
 }
