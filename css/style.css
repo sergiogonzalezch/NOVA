@@ -526,11 +526,12 @@ i {
 
 /*FOOTER BOTTOM*/
 .footer-bottom {
+    align-items: center;
     background-color: #333533;
     color: #fcfcfc;
     display: flex;
-    justify-content: center;
-    padding: 1%;
+    justify-content: space-between;
+    padding: 2%;
 }
 
 /*************************END FOOTER********************/
@@ -610,8 +611,6 @@ i {
     .nav {
         display: none;
     }
-
-
 
     .nav-tabs {
         flex-direction: column;
