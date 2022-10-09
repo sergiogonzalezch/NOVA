@@ -102,19 +102,24 @@ h2 > span {
 /*******************END OF HEADER STYLES*********************/
 
 /*******************NAVIGATION BAR STYLES********************/
-/*LOGO ISOTYPE STYLES*/
+/*LOGO AND ICON ISOTYPE STYLES*/
 .logo {
+    color: #fcfcfc;
     font-family: 'Jost', sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: 12px;
 }
 
-/*LOGO ISOTYPE HOVER PROPERTY*/
-.logo:hover {
+.icon-menu {
     color: #fcfcfc;
+    cursor: pointer;
+    display: none;
+    font-size: 1.5em;
+    padding: 10px;
 }
 
+/*LOGO ISOTYPE HOVER PROPERTY*/
 /*NAVBAR STYLE*/
 .navbar {
     align-items: center;
@@ -137,6 +142,38 @@ h2 > span {
 .nav-li {
     list-style: none;
     margin: 0 20px;
+}
+
+/*TOGGLE MENU */
+.movile-menu {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.movile-menu a {
+    display: block;
+}
+
+.list-menu {
+    background: rgba(51, 53, 51, 0.4);
+    left: -80%;
+    padding: 1rem 3rem;
+    position: fixed;
+    text-align: center;
+    top: 6rem;
+    transition: all .3s ease;
+    width: 30%;
+    z-index: 2;
+}
+
+.list-menu a {
+    margin: 10px 5px;
+}
+
+.list-menu.active {
+    left: 0;
 }
 
 /*****************END OF NAVIGATION BAR STYLES*****************/
@@ -183,15 +220,6 @@ RESIZE THE H2 */
     align-items: center;
     display: flex;
     flex-direction: column;
-}
-
-/*CARD PIC PROPERTIES*/
-
-.crop-circle {
-    border-radius: 100%;
-    height: 200px;
-    position: relative;
-    width: 200px;
 }
 
 /*CARD BODY STYLES*/
@@ -402,30 +430,28 @@ label {
 }
 
 label.label {
-    position: absolute;
-    top: 1rem;
+    font-size: 1rem;
     left: 0;
     line-height: 1rem;
-    font-size: 1rem;
     margin-left: 1rem;
-    -webkit-transition: all .3s ease;
-    -o-transition: all .3s ease;
+    position: absolute;
+    top: 1rem;
     transition: all .3s ease
 }
 
 label.label.active {
-    top: .1rem;
-    margin-left: 0;
+    color: #fcfcfc;
     font-size: 0.75rem;
     line-height: 0.75rem;
-    color: #fcfcfc;
+    margin-left: 0;
+    top: .1rem;
+
 }
 
 .error {
-    position: absolute;
     color: #ff3b3b;
-    /*    font-family: 'Poppins', serif;*/
-    font-size: 0.875rem
+    font-size: 0.875rem;
+    position: absolute;
 }
 
 /*TEXT AREA NO RESIZING*/
@@ -570,17 +596,28 @@ i {
         font-size: 5rem;
     }
 
-    .nav {
-        flex-direction: column;
+    .icon-menu {
+        display: block;
     }
+
+    .nav-title {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .nav {
+        display: none;
+    }
+
+
 
     .nav-tabs {
         flex-direction: column;
     }
 
-    .nav-li {
-        margin: 10px auto;
-    }
+
 
     .title-section {
         text-align: center;
