@@ -1,4 +1,4 @@
-🌟 NOVA - Responsive Website Template
+#NOVA - Responsive Website Template
 NOVA is a web design template created for a fictional company. Built with HTML, CSS, and JavaScript, this template is fully responsive, ensuring an optimal experience on any device.
 
 📌 Features
